@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlar Arduíno</title>
+
+    <style>
+        html{
+            height: 100%;
+        }
+
+        body{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        button{
+            margin: 10px;
+            cursor: pointer;
+            padding: 10px;
+            min-width: 150px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #eee;
+            border: 3px solid black;
+        }
+
+        .on{
+            background-color: crimson;
+        }
+
+        .off{
+            background-color: #444;
+        }
+    </style>
+</head>
+<body class="off">
+    <button id="on">Ligar</button>
+    <button id="off">Desligar</button>
+
+    <script type="text/javascript">
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                fetch(`/led?turnTo=${button.id}`)
+                document.body.className = button.id
+            })
+        })
+    </script>
+</body>
+</html>
