@@ -1,6 +1,6 @@
 # Arduino + Javascript
 
-Página web que controla um LED no arduíno.
+Página web que controla um LED no arduino.
 
 ![Demo](demo.gif)
 
