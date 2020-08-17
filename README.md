@@ -61,5 +61,6 @@ O servidor estará rodando por padrão na porta 3000, então basta acessar [loca
 
 ## Referências:
 
+- **[Como acender e piscar um LED no Arduino](https://tecdicas.com/como-acender-e-piscar-um-led-no-arduino/)**, por Tecdicas
 - **[Programando em JS com Node.js no Arduino](http://ramon-barros.com/arduino/2018/07/31/arduino-node-js.html)**, por Ramon Barros
 - **[LED Examples](http://johnny-five.io/examples/led/)**, por Johnny-Five community
